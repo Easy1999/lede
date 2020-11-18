@@ -800,14 +800,25 @@ define Device/netis_wf2881
 endef
 TARGET_DEVICES += netis_wf2881
 
+
+# k2p前面扇区占用640k
 define Device/phicomm_k2p
-  IMAGE_SIZE := 32128k
+  IMAGE_SIZE := 15744k
   DEVICE_VENDOR := Phicomm
   DEVICE_MODEL := K2P
   SUPPORTED_DEVICES += k2p
   DEVICE_PACKAGES := kmod-mt7615d luci-app-mtwifi
 endef
 TARGET_DEVICES += phicomm_k2p
+
+define Device/phicomm_k2p_32M
+  IMAGE_SIZE := 32128k
+  DEVICE_VENDOR := Phicomm
+  DEVICE_MODEL := K2P_32M
+  SUPPORTED_DEVICES += k2p_32M
+  DEVICE_PACKAGES := kmod-mt7615d luci-app-mtwifi
+endef
+TARGET_DEVICES += phicomm_k2p_32M
 
 define Device/planex_vr500
   $(Device/uimage-lzma-loader)
