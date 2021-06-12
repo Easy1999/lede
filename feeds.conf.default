@@ -16,4 +16,4 @@ src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityf
 # lienol
 src-git packages_lienol https://github.com/Lienol/openwrt-packages.git;19.07
 src-git luci_lienol https://github.com/Lienol/openwrt-luci.git;17.01
-src-git diy1 https://github.com/xiaorouji/openwrt-package.git;master
+# src-git diy1 https://github.com/xiaorouji/openwrt-package.git;master

@@ -994,7 +994,7 @@ TARGET_DEVICES += witown_treebear
 
 define Device/witown_treebear_16M
   $(Device/uimage-lzma-loader)
-  IMAGE_SIZE := 16000k
+  IMAGE_SIZE := 15000k
   DEVICE_VENDOR := WiTown
   DEVICE_MODEL := TreeBear_16M
   DEVICE_PACKAGES := kmod-mt7603e kmod-mt76x2e kmod-usb3 \
