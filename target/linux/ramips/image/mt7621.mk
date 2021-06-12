@@ -982,6 +982,26 @@ define Device/wevo_w2914ns-v2
 endef
 TARGET_DEVICES += wevo_w2914ns-v2
 
+define Device/witown_treebear
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 32448k
+  DEVICE_VENDOR := WiTown
+  DEVICE_MODEL := TreeBear
+  DEVICE_PACKAGES := kmod-mt7603e kmod-mt76x2e kmod-usb3 \
+	luci-app-mtwifi
+endef
+TARGET_DEVICES += witown_treebear
+
+define Device/witown_treebear_16M
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 16000k
+  DEVICE_VENDOR := WiTown
+  DEVICE_MODEL := TreeBear_16M
+  DEVICE_PACKAGES := kmod-mt7603e kmod-mt76x2e kmod-usb3 \
+	luci-app-mtwifi
+endef
+TARGET_DEVICES += witown_treebear_16M
+
 define Device/xiaomi_mir3g
   $(Device/uimage-lzma-loader)
   BLOCKSIZE := 128k
